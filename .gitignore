@@ -1,0 +1,10 @@
+work/
+.study/
+**/.local/
+**/.venv/
+**/node_modules/
+**/__pycache__/
+.DS_Store
+.env
+.env.*
+**/auth.json
