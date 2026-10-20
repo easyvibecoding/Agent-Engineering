@@ -8,13 +8,13 @@
 | S02 | [Codex authentication](https://learn.chatgpt.com/docs/auth) | 官方產品文件；ChatGPT 訂閱與 API key 登入 | 07 | 2026-10-19 |
 | S03 | [ChatGPT plan usage overview](https://developers.openai.com/siwc/token-sharing-open-source) | 官方 preview；開源／本機託管應用的訂閱授權 | 08 | 2026-10-19 |
 | S04 | [Registration and sign-in](https://developers.openai.com/siwc/token-sharing-open-source/sign-in) | 官方 preview；動態 client 註冊、PKCE、授權範圍 | 08 | 2026-10-19 |
-| S05 | [Models and inference](https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference) | 官方 preview；公開 Responses endpoint 與完成事件 | 02、08、13 | 2026-10-19 |
-| S06 | [Preview limitations](https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations) | 官方 preview；參數、工具與歷史限制，實作前必重查 | 02、03、05、08、09、11 | 2026-10-19 |
-| S07 | [Codex app-server with ChatGPT plan](https://developers.openai.com/siwc/token-sharing-open-source/codex-app-server) | 官方 preview；app-server、Responses provider 與 token 更新 | 07、08 | 2026-10-19 |
+| S05 | [Models and inference](https://developers.openai.com/siwc/token-sharing-open-source/models-and-inference) | 官方 preview；公開 Responses endpoint 與完成事件 | 02、08、13 | 2026-10-21 |
+| S06 | [Preview limitations](https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations) | 官方 preview；參數、工具與歷史限制，實作前必重查 | 02、03、05、08、09、11 | 2026-10-21 |
+| S07 | [Codex app-server with ChatGPT plan](https://developers.openai.com/siwc/token-sharing-open-source/codex-app-server) | 官方 preview；app-server、Responses provider 與 token 更新 | 07、08 | 2026-10-21 |
 | S08 | [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md) | 官方產品文件；指令發現與作用範圍 | 09 | 2026-10-19 |
-| S09 | [Agent Skills specification](https://agentskills.io/specification) | 公開規格；按需載入，實作支援仍須逐 runtime 查證 | 09 | 2026-10-19 |
-| S10 | [MCP specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) | 規範性來源；勿把規格能力當成所有 runtime 已實作 | 09、11 | 2026-10-19 |
-| S11 | [A2A specification](https://a2a-protocol.org/latest/specification/) | 查證時 Latest Released Version 為 1.0.0；保留與舊版的差異 | 10 | 2026-10-19 |
+| S09 | [Agent Skills specification](https://agentskills.io/specification) | 公開規格；按需載入，實作支援仍須逐 runtime 查證 | 09 | 2026-10-21 |
+| S10 | [MCP specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) | 規範性來源；勿把規格能力當成所有 runtime 已實作 | 09、11 | 2026-10-21 |
+| S11 | [A2A specification](https://a2a-protocol.org/latest/specification/) | 查證時 Latest Released Version 為 1.0.0；保留與舊版的差異 | 10 | 2026-10-21 |
 | S12 | [Effective context engineering](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | 第一方工程經驗；不是跨模型保證 | 02、05、06 | 2026-10-19 |
 | S13 | [Writing effective tools](https://www.anthropic.com/engineering/writing-tools-for-agents) | 第一方工程經驗；工具設計與可評估性 | 03 | 2026-10-19 |
 | S14 | [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) | 第一方架構經驗；workflow 與 Agent 模式 | 01、04、10、14 | 2026-10-19 |
@@ -32,7 +32,7 @@
 
 ## 當前實際觀察與未知
 
-本機曾讀回 codex-cli 0.160.1、Logged in using ChatGPT，以及 exec help 的 JSONL、output schema、cwd 和 resume 等入口。沒有執行模型任務，沒有為本 repo 建 OAuth app，沒有驗證 app 的帳號資格或 preview 推論。
+2026-10-19 本機曾讀回 codex-cli 0.160.1、Logged in using ChatGPT，以及 exec help 的 JSONL、output schema、cwd 和 resume 等入口。沒有執行模型任務，沒有為本 repo 建 OAuth app，沒有驗證 app 的帳號資格或 preview 推論。
 
 MCP latest 查證時指向 2026-07-28；A2A 最新 released version 顯示 1.0.0。協定規格不證明特定 Codex 版本已實作全部擴充。官方目前頁面可能比本機安裝版本新。
 
@@ -43,3 +43,7 @@ MCP latest 查證時指向 2026-07-28；A2A 最新 released version 顯示 1.0.0
 研究結果需保留任務分布、基準與限制，不把單篇實驗當跨產品保證。無法確認就標為待驗證，不用歷史記憶冒充當前狀態。
 
 本 repo 沒有排程監控或自動來源更新。
+
+## 2026-10-21 內容修訂
+
+全章以共同客服案例加強白話解釋、逐步判斷與銜接；S05、S06、S07、S09、S10、S11 已複核，其餘來源日期保留。案例日期、數字與工具事件是合成教學，不是訂閱路線已跑通的證據。

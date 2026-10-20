@@ -1,5 +1,7 @@
 # 面試與跳章路線
 
+先用[共同案例](../maps/course-story.md)核對條件與變體。章節順序是知識導航，不要求共用環境；跳章先讀該章最小案例。
+
 先選一條問題導向路線；章首先讀最小前置摘要，不必執行前章。卡在名詞時才補讀依賴章。
 
 - **自建 harness 與訂閱推論**：[01](../chapters/foundations/01-agent-and-harness/README.md) → [03](../chapters/agent-core/03-tool-contracts/README.md) → [04](../chapters/agent-core/04-agent-loop-and-planning/README.md) → [06](../chapters/knowledge/06-memory-and-state/README.md) → [08](../chapters/codex-runtime/08-subscription-oauth-and-harness/README.md) → [12](../chapters/production/12-reliability-and-recovery/README.md) → [13](../chapters/production/13-evals-observability-and-budgets/README.md)

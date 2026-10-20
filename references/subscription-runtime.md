@@ -1,12 +1,18 @@
 # 訂閱、Responses 與 Harness 路線
 
-查證基線：2026-10-19。原生登入、自己的 OAuth client 與平台 API key 是不同授權路徑。
+來源初查：2026-10-19；推論、preview 限制與 app-server 文件複核：2026-10-21。原生登入、自己的 OAuth client 與平台 API key 是不同授權路徑。
 
 | 路線 | 模型與執行責任 | 使用方式 |
 | --- | --- | --- |
 | 原生 Codex ChatGPT 登入 | Codex 提供現成 harness | 本機 CLI／exec 起步；SDK／app-server 視整合需求 |
 | 自己 app 的 SIWC 訂閱授權＋Responses | app 自建 loop，或把 token 接到 Codex app-server | 適用官方文件描述的開源／本機託管場景，需獨立同意與資格 |
 | 平台 API key | 依所選 runtime 自管或整合 | 概念比較；不作本期實作前提或自動 fallback |
+
+## 先用人話分清楚
+
+想直接練任務怎麼拆、怎麼用工具、怎麼驗收，可以先把 Codex 當現成執行系統。想練自己寫控制循環，才需要自己的 app、授權與模型連線。
+
+OAuth 像取得使用許可；Responses 是每次向模型提問的介面；harness 是決定下一步、真的執行工具並記住進度的程式。三者不能互相代替。模型回「請讀工單」時，還要由本機工具真的讀取；取得回覆也不代表工單已完成。[第 08 章完整走一次](../chapters/codex-runtime/08-subscription-oauth-and-harness/lesson.md)。
 
 ## 自建 Harness 可以練的責任
 

@@ -41,6 +41,12 @@
 | 13 | [Evals、Observability 與資源](chapters/production/13-evals-observability-and-budgets/README.md) | tasks, trials, graders, outcome, trace, regression, calibration, latency, tokens, quotas |
 | 14 | [系統設計、案例整合與面試](chapters/synthesis/14-system-design-and-interviews/README.md) | requirements, architecture, tradeoffs, data flow, rollout, SLOs, interviews, evidence |
 
+## 用同一個案例串起全部章節
+
+從「一筆退貨工單要怎麼回覆」開始：先分清模型與執行系統，再處理資料、工具、狀態、權限、故障和評估。每章新增一種難度，也重述必要背景，方便跳章。[共同案例與全課進度](maps/course-story.md)寫清楚日期、店規、未知條件與各章變體。
+
+正文先回答具體問題，再把名詞換成人話，接著逐步走案例、說明取捨，最後銜接下一章。每題有給定資料、交付與判分重點。
+
 ## 每章怎麼讀
 
 依序讀正文與圖說、設計取捨，先自答 Q01／Q03／Q05；卡住才讀分級提示，修正後再看參考解答。Q02／Q04／Q06 是延伸比較、設計與未來 lab 規格。
@@ -57,7 +63,7 @@
 
 ## 時效、來源與證據
 
-查證基線：2026-10-19。[來源與更新政策](references/sources.md)、[視覺編排與生圖紀錄](references/visual-policy.md)、[驗收紀錄](references/verification.md)。
+來源初次查證：2026-10-19；全章內容修訂：2026-10-21。訂閱 preview、MCP、Skills 與 A2A 的關鍵來源另於修訂日複核。[來源與更新政策](references/sources.md)、[視覺編排與生圖紀錄](references/visual-policy.md)、[驗收紀錄](references/verification.md)、[逐章修訂對照](references/editorial-review.md)。
 
 核心知識地圖可追蹤與擴充；14 天目標是掌握核心設計及面試表達，延伸領域另有後續安排。合成教學案例清楚標示；設計、實作、測試與部署使用不同狀態。
 
