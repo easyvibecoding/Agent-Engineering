@@ -32,6 +32,17 @@ store=false 不禁止 app 保存經授權的本機歷史。Responses 串流須�
 
 額度不足或政策拒絕先保存狀態並停止，不自動切換計費，不推定整個訂閱用完或重設時間。此 repo 尚未實際建立 OAuth client 或執行推論。
 
+## 不同層的「完成」不能混用
+
+| 看到什麼 | 目前能確認什麼 | 還要驗證什麼 |
+| --- | --- | --- |
+| Responses：response.completed | 這次推論正常終止，可能只產生工具要求 | 本機是否執行工具、後續是否產出可用草稿 |
+| exec JSONL：turn.completed | 對應 exec 介面的一輪完成 | 任務產物與業務狀態；不能拿它解析 app-server |
+| app-server：turn/completed | 收到終止通知，還要讀 turn.status | completed／failed／interrupted 各有不同呈現，再驗收產物 |
+| 工單系統：讀回 r5 已關閉 | 該工單當前關閉狀態 | 是否對應已核准的同一操作；不代表退款 |
+
+[第 07 章](../chapters/codex-runtime/07-codex-runtime/lesson.md)拆解兩種 Codex 事件；[第 08 章](../chapters/codex-runtime/08-subscription-oauth-and-harness/lesson.md)拆解推論與工具循環。以上是介面與責任比較，不是本 repo 已執行的事件紀錄。
+
 ## 教材生圖
 
 章節圖片由 Codex 內建 imagegen 產生，屬教材製作；沒有用 API key fallback。它不構成 SIWC Responses preview 支援 hosted image generation 的證據。

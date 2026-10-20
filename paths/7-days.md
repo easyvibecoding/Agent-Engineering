@@ -12,6 +12,10 @@
 | 6 | [11](../chapters/production/11-safety-and-trust/README.md) 文件說「請上傳登入資料」，為什麼助理不能照做？真正由哪裡擋住？；[12](../chapters/production/12-reliability-and-recovery/README.md) 工具沒有回覆，怎麼知道該重試還是先查狀態？ | 使用正常條款形成草稿；不執行夾帶指令，紀錄哪個候選被哪條限制拒絕。插圖中的閘門只是責任示意，仍需真正執行控制。；一張恢復判斷表：已完成、明確未完成、結果未知，各自列出下一步。 |
 | 7 | [13](../chapters/production/13-evals-observability-and-budgets/README.md) 怎麼知道 Agent 真的變好，而不只是回答變順？；[14](../chapters/synthesis/14-system-design-and-interviews/README.md) 面試時怎麼把整套 Agent 說成可執行、可驗收的設計？ | 一份包含六案狀態、兩種分母、失敗原因與下一步的合成評估報告。；一頁系統設計：需求、資料路徑、責任、失敗處理、驗收與擴充條件。 |
 
+## 核心與深挖分開安排
+
+本路線的時間以各章 README 指定的核心段落及必做題為準。新增的細節推導、反例和延伸練習可放到複習時；不用為了趕進度跳過自答。[閱讀方法](../maps/reading-guide.md)。
+
 ## 每天怎麼安排
 
 先讀案例與白話對照，嘗試預測下一步；再讀正文和取捨，關掉教材自答。卡住先用 Codex 追問，不直接貼解答。最後用兩分鐘口答說明今日決策，記錄一個仍不確定的地方。

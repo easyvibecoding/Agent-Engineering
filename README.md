@@ -8,15 +8,16 @@
 
 ## 從這裡開始
 
+- [核心與深挖怎麼讀](maps/reading-guide.md)：先走完整案例，再按疑問補機制與反例。
 - [14 天完整核心](paths/14-days.md)：每天一章，42 題必做。
 - [7 天衝刺](paths/7-days.md)：每天兩章，28 題必做。
 - [面試與跳章路線](paths/interview-and-jump.md)：依職能、題型或疑難直接開始。
-- [84 題索引](maps/exercise-index.md)、[知識地圖](maps/knowledge-map.md)、[前置依賴圖](maps/dependencies.md)、[中英詞彙表](maps/glossary.md)。
+- [84 題索引](maps/exercise-index.md)、[章內細節索引](maps/section-index.md)、[知識地圖](maps/knowledge-map.md)、[前置依賴圖](maps/dependencies.md)、[中英詞彙表](maps/glossary.md)。
 - [第 15–28 天延伸安排](paths/further-study.md)。
 
 ## 目前交付與實作邊界
 
-本版有 14 章正文、完整案例、設計取捨、84 題、分級提示、參考解答、面試追問、Codex 協作卡、3 張 Codex 生圖與各章機制圖。**Lab 只有規格，尚未建立或執行實作。**
+本版有 14 章正文、逐步案例與反例、設計取捨、84 題與分點判分、分級提示、參考解答、面試追問、Codex 協作卡、3 張 Codex 生圖與各章機制圖。**Lab 只有規格，尚未建立或執行實作。**
 
 後續推論以訂閱為主：既有 Codex 原生登入，或應用程式自己的 Sign in with ChatGPT plan usage OAuth＋Responses。自己的應用需獨立授權、符合資格與 preview 能力；不把原生登入、模型清單或官方文件當成該 app 已跑通的證據。[路線與限制](references/subscription-runtime.md)
 
@@ -50,6 +51,8 @@
 ## 每章怎麼讀
 
 依序讀正文與圖說、設計取捨，先自答 Q01／Q03／Q05；卡住才讀分級提示，修正後再看參考解答。Q02／Q04／Q06 是延伸比較、設計與未來 lab 規格。
+
+正文分核心與深挖閱讀；第一輪以案例和必做題為主，延伸推導按疑問補讀，不要求每天讀完所有材料。[閱讀方法](maps/reading-guide.md)。
 
 每章都有最小前置摘要，可直接開始；建議前置是補讀導航，不要求先執行前章。個人答案可放 .study/，不會提交 Git。
 
