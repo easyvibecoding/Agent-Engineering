@@ -1,8 +1,12 @@
 # Agent Engineering 2026
 
-用通用原理、**自建 Agent harness** 與 **Codex runtime 對照**，準備 Agent 工程與系統設計面試。
+客服傳來一張工單：「買了 12 天，能退嗎？幫我寫回覆。」
 
-適合已會程式、API 與 Git 的開發者。繁體中文教學，保留英文術語。每天約 2–3 小時，提供 14 天完整核心、7 天衝刺及跳章做題路線。
+助理很快寫好：「可以，已處理。」你準備交出去，才發現它沒確認商品是否拆封。畫面上有答案，但你還不知道它真的讀了什麼、做了什麼。
+
+這套課程從這個小問題開始，帶你逐步學會打造、檢查與解釋 AI Agent。用 **Codex runtime** 當現成執行系統，也拆開 **Agent harness** 看控制程式要負責什麼。案例全是合成教學。
+
+適合會程式與 Git、想進入 Agent Engineering 的開發者。每天約 2–3 小時，可選 14 天、7 天或跳章；本期先學設計與面試表達，實作留到另行安排。
 
 ![Harness 的模型、工具、狀態、權限與驗收分工](chapters/foundations/01-agent-and-harness/assets/harness-overview.png)
 
@@ -25,28 +29,28 @@
 
 ## 章節
 
-| 章 | 主題 | 知識點 |
+| 章 | 主題 | 你會碰到的問題 |
 | --- | --- | --- |
-| 01 | [Agent 與 Harness 全貌](chapters/foundations/01-agent-and-harness/README.md) | Agent, workflow, model, harness, runtime, environment, autonomy, acceptance |
-| 02 | [LLM 與 Context Engineering](chapters/foundations/02-llm-and-context/README.md) | tokens, inference, instructions, structured outputs, context selection, compaction |
-| 03 | [工具契約與 Agent-Friendly 介面](chapters/agent-core/03-tool-contracts/README.md) | function tools, schemas, validation, errors, authorization, idempotency, tool results |
-| 04 | [Agent Loop、規劃與停止](chapters/agent-core/04-agent-loop-and-planning/README.md) | ReAct, plan-and-execute, routing, evaluator-optimizer, state machines, termination |
-| 05 | [Retrieval 與 RAG](chapters/knowledge/05-retrieval-and-rag/README.md) | chunking, embeddings, lexical search, hybrid retrieval, reranking, grounding, freshness, ACL |
-| 06 | [Memory、State 與恢復](chapters/knowledge/06-memory-and-state/README.md) | working memory, durable state, sessions, checkpoints, stores, retention, provenance |
-| 07 | [Codex Runtime 與訂閱入口](chapters/codex-runtime/07-codex-runtime/README.md) | Codex CLI, exec, SDK, app-server, threads, turns, items, events, sandbox, approvals |
-| 08 | [訂閱 OAuth、Responses 與自建 Harness](chapters/codex-runtime/08-subscription-oauth-and-harness/README.md) | SIWC, OAuth, PKCE, scopes, Responses API, SSE, custom harness, tool loop, token lifecycle |
-| 09 | [MCP、Skills 與工具探索](chapters/protocols/09-mcp-skills-and-discovery/README.md) | MCP host client server, capabilities, resources, prompts, tools, AGENTS.md, Skills, discovery |
-| 10 | [多 Agent、協調與 A2A](chapters/protocols/10-multi-agent-and-a2a/README.md) | delegation, handoff, agent-as-tool, ownership, shared state, A2A, Agent Card |
-| 11 | [安全、信任邊界與人類控制](chapters/production/11-safety-and-trust/README.md) | prompt injection, least privilege, approval, data exfiltration, supply chain, audit, sandbox |
-| 12 | [可靠性、冪等性與長任務恢復](chapters/production/12-reliability-and-recovery/README.md) | timeouts, bounded retry, idempotency, cancellation, checkpoints, compensation, durable execution |
-| 13 | [Evals、Observability 與資源](chapters/production/13-evals-observability-and-budgets/README.md) | tasks, trials, graders, outcome, trace, regression, calibration, latency, tokens, quotas |
-| 14 | [系統設計、案例整合與面試](chapters/synthesis/14-system-design-and-interviews/README.md) | requirements, architecture, tradeoffs, data flow, rollout, SLOs, interviews, evidence |
+| 01 | [Agent 與 Harness 全貌](chapters/foundations/01-agent-and-harness/README.md) | 助理說已處理，你能相信到哪一步？ |
+| 02 | [LLM 與 Context Engineering](chapters/foundations/02-llm-and-context/README.md) | 資料給了一大包，為什麼還漏掉關鍵條件？ |
+| 03 | [工具契約與 Agent-Friendly 介面](chapters/agent-core/03-tool-contracts/README.md) | 工具回 success，實際讀到了誰？ |
+| 04 | [Agent Loop、規劃與停止](chapters/agent-core/04-agent-loop-and-planning/README.md) | 已經查第三次了，還要讓它繼續嗎？ |
+| 05 | [Retrieval 與 RAG](chapters/knowledge/05-retrieval-and-rag/README.md) | 找到「14 天」，怎麼仍不能說一定可退？ |
+| 06 | [Memory、State 與恢復](chapters/knowledge/06-memory-and-state/README.md) | 隔天重開，昨天的筆記還能直接信嗎？ |
+| 07 | [Codex Runtime 與訂閱入口](chapters/codex-runtime/07-codex-runtime/README.md) | Codex 出現綠勾，究竟完成了什麼？ |
+| 08 | [訂閱 OAuth、Responses 與自建 Harness](chapters/codex-runtime/08-subscription-oauth-and-harness/README.md) | 自己控制下一步，登入後還缺哪些工作？ |
+| 09 | [MCP、Skills 與工具探索](chapters/protocols/09-mcp-skills-and-discovery/README.md) | 選單有 300 個工具，哪些真的能用？ |
+| 10 | [多 Agent、協調與 A2A](chapters/protocols/10-multi-agent-and-a2a/README.md) | 多找兩個助理，怎麼反而花更多時間？ |
+| 11 | [安全、信任邊界與人類控制](chapters/production/11-safety-and-trust/README.md) | 文件叫你上傳資料，這句話有權下令嗎？ |
+| 12 | [可靠性、冪等性與長任務恢復](chapters/production/12-reliability-and-recovery/README.md) | 按了關單卻沒回覆，要不要再按一次？ |
+| 13 | [Evals、Observability 與資源](chapters/production/13-evals-observability-and-budgets/README.md) | 報告寫 75%，到底算了哪些案例？ |
+| 14 | [系統設計、案例整合與面試](chapters/synthesis/14-system-design-and-interviews/README.md) | 面試官問怎麼做，你的第一句話是什麼？ |
 
 ## 用同一個案例串起全部章節
 
 從「一筆退貨工單要怎麼回覆」開始：先分清模型與執行系統，再處理資料、工具、狀態、權限、故障和評估。每章新增一種難度，也重述必要背景，方便跳章。[共同案例與全課進度](maps/course-story.md)寫清楚日期、店規、未知條件與各章變體。
 
-正文先回答具體問題，再把名詞換成人話，接著逐步走案例、說明取捨，最後銜接下一章。每題有給定資料、交付與判分重點。
+正文先讓你遇到一個選擇，再帶你看資料、做判斷。名詞用到才解釋；長表和次要規格留在深挖。讀到停點可以留一張接讀卡，下次從原處繼續。每題仍有足夠資料、交付與判分依據。
 
 ## 每章怎麼讀
 
